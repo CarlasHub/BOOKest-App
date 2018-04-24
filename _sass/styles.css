@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display");
+@import url("https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Great+Vibes|Hi+Melody");
+* {
+  box-sizing: border-box; }
+
+body {
+  background: linear-gradient(to top, #000428, #004e92);
+  color: white;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0; }
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.5%; }
+
+.book-list {
+  height: 500px;
+  width: 400px;
+  list-style: none;
+  padding: 0;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 1.5em;
+  font-weight: 100;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+
+.title {
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px 10px 0 0;
+  text-align: center; }
+  .title h1 b {
+    font-family: "Sedgwick Ave Display", cursive;
+    color: #0064f6;
+    text-transform: uppercase; }
+
+.month {
+  padding: 5px 15px;
+  margin-bottom: 10px;
+  color: #0064F6;
+  font-weight: 700;
+  opacity: 0.7;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 3px; }
+  .month option {
+    color: #0064F6;
+    font-weight: 900; }
+
+.bookInput {
+  position: relative; }
+  .bookInput input {
+    width: 100%;
+    padding: 15px 15px 15px 20px;
+    background-color: #d9d9d9;
+    border-radius: 3px; }
+    .bookInput input:focus {
+      background-color: white;
+      border: solid 2px #1B2239;
+      outline: none; }
+  .bookInput input.bookInput, .bookInput i.fas.fa-plus {
+    position: absolute;
+    right: 5px;
+    top: 8px; }
+  .bookInput a {
+    color: green; }
+  .bookInput i.fas.fa-plus {
+    color: black;
+    opacity: 0.3; }
+    .bookInput i.fas.fa-plus:hover {
+      background-color: #0064F6;
+      color: white;
+      opacity: 1;
+      border: solid 3px #0064F6;
+      border-radius: 5px 5px;
+      padding: 3px 10px; }
+  .bookInput input.bookInput, .bookInput i.fas.fa-search {
+    position: absolute;
+    left: 35%;
+    top: 8px;
+    color: #0064F6;
+    opacity: 0.5;
+    cursor: pointer; }
+    .bookInput input.bookInput:hover, .bookInput i.fas.fa-search:hover {
+      opacity: 1;
+      transform: scale(1.5); }
+
+.book {
+  /* style */
+  margin: 10px 10px;
+  padding: 10px;
+  display: flex;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  background-color: #00142E; }
+  .book i.fa-share-square {
+    opacity: 0;
+    color: black; }
+    .book i.fa-share-square:hover {
+      opacity: 0.9;
+      color: yellow; }
+  .book:hover {
+    border: 1px solid white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: scale(1.1); }
+  .book .remove, .book i.fas.fa-trash-alt {
+    opacity: 0.5;
+    color: grey;
+    transition: 0.3s linear; }
+    .book .remove:hover, .book i.fas.fa-trash-alt:hover {
+      opacity: 1;
+      color: red; }
+
+.toggle-read {
+  height: 100%;
+  width: 29px;
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 2px;
+  text-align: center; }
+
+.check {
+  opacity: 0;
+  transition: opacity 100ms ease-in;
+  background-color: green; }
+  .check:hover {
+    opacity: 1; }
+
+.read-status {
+  background-color: rgba(255, 0, 0, 0.6); }
+
+.display-revert {
+  opacity: 1; }
+
+/*# sourceMappingURL=styles.css.map */
